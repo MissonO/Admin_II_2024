@@ -29,6 +29,8 @@ certificate/nginx-selfsigned.csr
 
 dns/*key
 dns/*.private
+*.key
+*.private
 
 
 # Docker-related files
