@@ -1,0 +1,50 @@
+# Created by https://www.toptal.com/developers/gitignore/api/ssh,linux
+# Edit at https://www.toptal.com/developers/gitignore?templates=ssh,linux
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+
+### SSH ###
+**/.ssh/id_*
+**/.ssh/*_id_*
+**/.ssh/known_hosts
+
+# Fichiers de configuration sensibles
+db/db.env
+certificate/nginx-selfsigned.key
+certificate/nginx-selfsigned.crt
+certificate/nginx-selfsigned.csr
+
+dns/*key
+dns/*.private
+
+
+# Docker-related files
+*.log
+docker-compose.override.yml
+
+# Node or PHP dependencies (exemple si vous utilisez des dépendances via npm ou composer)
+node_modules/
+vendor/
+
+# Backup files
+*.sql
+*.tar.gz
+
+# System files
+.DS_Store
+Thumbs.db
+
+db/data/

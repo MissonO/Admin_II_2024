@@ -1,0 +1,58 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./web/html:/var/www/html
+      - ./web/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - php
+    networks:
+      - dmz
+
+  php:
+    build: ./php
+    image: php:custom
+    container_name: php
+    volumes:
+      - ./web/html:/var/www/html
+    depends_on:
+      - mariadb
+    env_file:
+      - ./db/db.env
+    networks:
+      - dmz
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    env_file:
+      - ./db/db.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d/
+      - ./db/data:/var/lib/mysql
+    networks:
+      - dmz
+
+  dns:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: dns
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+    volumes:
+      - ./dnsConfig/named.conf:/etc/bind/named.conf
+      - ./dnsConfig/l1-20.ephec-ti.be.zone:/etc/bind/l1-20.ephec-ti.be.zone
+      - ./dnsConfig/l1-20.ephec-ti.be.zone.signed:/etc/bind/l1-20.ephec-ti.be.zone.signed
+    networks:
+      - dmz
+    environment:
+      - TZ=Europe/Brussels
+    restart: unless-stopped
+
+networks:
+  dmz:

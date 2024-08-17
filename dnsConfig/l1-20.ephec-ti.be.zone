@@ -1,0 +1,23 @@
+$ORIGIN l1-20.ephec-ti.be.
+$TTL 86400
+@   IN  SOA ns.l1-20.ephec-ti.be. admin.ephec-ti.be (
+                2024081010 ; Serial
+                3600       ; Refresh
+                1800       ; Retry
+                604800     ; Expire
+                86400 )    ; Minimum TTL
+; Name Servers
+@   IN  NS ns.l1-20.ephec-ti.be.
+
+; Machines
+ns      IN A 51.178.141.71
+www     IN A 51.178.141.71
+mail    IN A 51.178.141.71
+blog    IN CNAME www.l1-20.ephec-ti.be.
+
+; Delegation zone
+@                           IN NS ns.l1-20.ephec-ti.be.
+ns.l1-20.ephec-ti.be        IN A  51.178.141.71
+
+$INCLUDE "Kl1-20.ephec-ti.be.+008+40584.key"
+$INCLUDE "Kl1-20.ephec-ti.be.+008+46409.key"
