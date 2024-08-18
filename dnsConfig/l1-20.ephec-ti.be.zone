@@ -9,11 +9,16 @@ $TTL 86400
 ; Name Servers
 @   IN  NS ns.l1-20.ephec-ti.be.
 
+; Mail Server
+@   IN  MX 10  mail.l1-20.ephec-ti.be.
+
 ; Machines
 ns      IN A 51.178.141.71
 www     IN A 51.178.141.71
 mail    IN A 51.178.141.71
 blog    IN CNAME www.l1-20.ephec-ti.be.
+_acme-challenge.l1-20.ephec-ti.be.    IN TXT hdBxsj8KnmcJqSBqdeP6r6eoXKn855esHmkqJkAGl7M
+
 
 ; Delegation zone
 @                           IN NS ns.l1-20.ephec-ti.be.

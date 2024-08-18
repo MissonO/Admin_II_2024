@@ -1,0 +1,96 @@
+Return-Path: <>
+Delivered-To: user@l1-20.ephec-ti.be
+Received: from mail.l1-20.ephec-ti.be
+	by mail.l1-20.ephec-ti.be with LMTP
+	id gBseN083wWbwBwAAIxb3cQ
+	(envelope-from <>)
+	for <user@l1-20.ephec-ti.be>; Sat, 17 Aug 2024 23:50:39 +0000
+Received: by mail.l1-20.ephec-ti.be (Postfix)
+	id E11F1103D49; Sat, 17 Aug 2024 23:50:39 +0000 (UTC)
+Date: Sat, 17 Aug 2024 23:50:39 +0000 (UTC)
+From: Mail Delivery System <MAILER-DAEMON@mail.l1-20.ephec-ti.be>
+Subject: Undelivered Mail Returned to Sender
+To: user@l1-20.ephec-ti.be
+Auto-Submitted: auto-replied
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="0DC2B103D45.1723938639/mail.l1-20.ephec-ti.be"
+Content-Transfer-Encoding: 8bit
+Message-Id: <20240817235039.E11F1103D49@mail.l1-20.ephec-ti.be>
+
+This is a MIME-encapsulated message.
+
+--0DC2B103D45.1723938639/mail.l1-20.ephec-ti.be
+Content-Description: Notification
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+This is the mail system at host mail.l1-20.ephec-ti.be.
+
+I'm sorry to have to inform you that your message could not
+be delivered to one or more recipients. It's attached below.
+
+For further assistance, please send mail to postmaster.
+
+If you do so, please include this problem report. You can
+delete your own text from the attached returned message.
+
+                   The mail system
+
+<oscar.misson@gmail.com>: host gmail-smtp-in.l.google.com[74.125.128.27] said:
+    550-5.7.26 Your email has been blocked because the sender is
+    unauthenticated. 550-5.7.26 Gmail requires all senders to authenticate with
+    either SPF or DKIM. 550-5.7.26  550-5.7.26  Authentication results:
+    550-5.7.26  DKIM = did not pass 550-5.7.26  SPF [l1-20.ephec-ti.be] with
+    ip: [51.178.141.71] = did not pass 550-5.7.26  550-5.7.26  For instructions
+    on setting up authentication, go to 550 5.7.26
+    https://support.google.com/mail/answer/81126#authentication
+    4fb4d7f45d1cf-5bec4fd794fsi3426543a12.312 - gsmtp (in reply to end of DATA
+    command)
+
+--0DC2B103D45.1723938639/mail.l1-20.ephec-ti.be
+Content-Description: Delivery report
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; mail.l1-20.ephec-ti.be
+X-Postfix-Queue-ID: 0DC2B103D45
+X-Postfix-Sender: rfc822; user@l1-20.ephec-ti.be
+Arrival-Date: Sat, 17 Aug 2024 23:50:39 +0000 (UTC)
+
+Final-Recipient: rfc822; oscar.misson@gmail.com
+Original-Recipient: rfc822;oscar.misson@gmail.com
+Action: failed
+Status: 5.7.26
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.7.26 Your email has been blocked because the
+    sender is unauthenticated. 550-5.7.26 Gmail requires all senders to
+    authenticate with either SPF or DKIM. 550-5.7.26  550-5.7.26
+    Authentication results: 550-5.7.26  DKIM = did not pass 550-5.7.26  SPF
+    [l1-20.ephec-ti.be] with ip: [51.178.141.71] = did not pass 550-5.7.26
+    550-5.7.26  For instructions on setting up authentication, go to 550 5.7.26
+    https://support.google.com/mail/answer/81126#authentication
+    4fb4d7f45d1cf-5bec4fd794fsi3426543a12.312 - gsmtp
+
+--0DC2B103D45.1723938639/mail.l1-20.ephec-ti.be
+Content-Description: Undelivered Message
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+
+Return-Path: <user@l1-20.ephec-ti.be>
+Received: from localhost (localhost [127.0.0.1])
+	by mail.l1-20.ephec-ti.be (Postfix) with ESMTP id 0DC2B103D45
+	for <oscar.misson@gmail.com>; Sat, 17 Aug 2024 23:50:39 +0000 (UTC)
+Message-ID: <8a3692fa-8bef-4ef4-a99a-ab23e1bf9500@l1-20.ephec-ti.be>
+Date: Sun, 18 Aug 2024 01:50:38 +0200
+MIME-Version: 1.0
+Content-Language: fr
+To: oscar.misson@gmail.com
+From: user 1 <user@l1-20.ephec-ti.be>
+Subject: test
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 8bit
+
+    test
+
+
+--0DC2B103D45.1723938639/mail.l1-20.ephec-ti.be--

@@ -26,12 +26,15 @@ db/db.env
 certificate/nginx-selfsigned.key
 certificate/nginx-selfsigned.crt
 certificate/nginx-selfsigned.csr
+certificate/
 
 dns/*key
 dns/*.private
 *.key
 *.private
 
+*.pem
+*.log
 
 # Docker-related files
 *.log
@@ -50,3 +53,5 @@ vendor/
 Thumbs.db
 
 db/data/
+
+letsencrypt
