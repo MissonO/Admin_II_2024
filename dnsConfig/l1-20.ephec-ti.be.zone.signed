@@ -1,43 +1,51 @@
-; File written on Sat Aug 17 23:05:14 2024
+; File written on Sun Aug 18 08:45:39 2024
 ; dnssec_signzone version 9.18.28-0ubuntu0.24.04.1-Ubuntu
 l1-20.ephec-ti.be.	86400	IN SOA	ns.l1-20.ephec-ti.be. admin.ephec-ti.be.l1-20.ephec-ti.be. (
-					2024081011 ; serial
+					2024081012 ; serial
 					3600       ; refresh (1 hour)
 					1800       ; retry (30 minutes)
 					604800     ; expire (1 week)
 					86400      ; minimum (1 day)
 					)
 			86400	RRSIG	SOA 8 3 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					XHlWAiIejk8sskk0WnQSwa+6pjvyj/xhWpuy
-					SJv+wPvgdVDIxOtYJCeo1nHO8xk6dxm/spux
-					ItV99C7EU+h9yhCSKSMTgjLpOdPMwNM8LrrK
-					peWYOWFHHKXP7gtn+S7GY+T8sXdSo+dvTiKb
-					59QzXJWyKvqg35PysKkVj9VTKG0= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					oGVoCMDfLocgYQosXgn+hbSHkeqn4cDyCTd5
+					ZTVGO1L1WWs1HwF/qqq1D/ZVTpR+xk9QFloX
+					FuWAmEJlrvtHkmkBydbbSJpauxI/4W55I8/d
+					2TvR8Rfc1CGXt5u5gnVus7GogTOCkKsMk5Gk
+					rUVZ+niwLn2uso/8jcHxbxqmDhk= )
 			86400	NS	ns.l1-20.ephec-ti.be.
 			86400	RRSIG	NS 8 3 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					SA9c80XV3RsRt9Hif/HDpR7Dyun1XBeZnctm
-					uJzx5a0PYFRUPt/vm6ero1ffQAxxVzhDvYKY
-					6BbnF2j7AksHKcZuwEM6Et4FIESuhVzmVnsd
-					TGv/6MCRYyGK4VaCVaRPI8O4OOCxgYGyX3VB
-					xKf+qLPqCKl2Vv/WxIYPqdPkw4E= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					uXY/YUnDdiCPColXBWXiPigAOF+yA+WGyW7T
+					Ea8HSzfNwdp8qX+5MIYL0FGmcnI5nVMJOp0w
+					5nRrCMJFBg3RYQhMOdmKqeSyOjSlOtC7Rn8x
+					xZ0C+WTAYGIMdTeTdc5Mzk/jT9DtkCKIujoV
+					V8BoTCvqMkBnlJeKlIbndXdIico= )
 			86400	MX	10 mail.l1-20.ephec-ti.be.
 			86400	RRSIG	MX 8 3 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					CRVoc0THCOt/l0o17LUSC7YVg7OIWddVdD9b
-					TNaJPH6Q7GQ3RWFxvK3jyt6DAw/cdDAMYzAW
-					TJ+zDFQbVyudkI0ivxqAnwuklOvlOZVexjwz
-					NrWiqybjVvB2E12Q/BVSIgrXB6Orz+tWO06z
-					g/BNNTivf+KekNzKbaByZKT4/7s= )
-			86400	NSEC	_acme-challenge.l1-20.ephec-ti.be. NS SOA MX RRSIG NSEC DNSKEY
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					sA4knk2hekKzqAAqhotCEQAZAjQjyhkclt4Y
+					G6Ma6wF7zO6SRhchgwyZuuc8atPw1ZRM2EeH
+					khRBwvcY2XIcBUebB1WFmDyT/h38bR+NzwZU
+					Tw8OjN143UkTSKhpS57LNqVhB0RFSC7fsAOs
+					RLfIkBm/pfY2lEg1auhUkCAjpE4= )
+			86400	TXT	"v=spf1 mx -all"
+			86400	RRSIG	TXT 8 3 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					T3vU9CDKhbFkfkgpKu6gv29Tnz5U3LJz5zCA
+					Qm3i//kv5PsTyrgfl7ncCPAfZNmDQ7RhS1Av
+					/XtB62FEEdJI1VRJ+2jFA6H1Ltg05xsMC30s
+					zisolhqYbVj0QmWdc49F3/uwi/t9P5l4fcu8
+					WKAPj1VfaUlamtgXnxxusG0OOXA= )
+			86400	NSEC	_acme-challenge.l1-20.ephec-ti.be. NS SOA MX TXT RRSIG NSEC DNSKEY
 			86400	RRSIG	NSEC 8 3 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					ghnBYRV9j3iZXuXzZoOWJzILZxRbJc8HrEcO
-					TTRuCpHhjM5CDgVtMwvGbeNgYbOIKM/VceYq
-					18qTEl7xk5FmSApB0glJf0apG1Im2/MFfGqt
-					nG4Gs4d/rAfvRL78m1C/n1dcmnsX3mpTEBhV
-					x7oAa7HdSNfDM6Kh3thzWu0zeL4= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					mUNGR/ZO4rlFj0CGptR4rLtarTOIwGEayGH9
+					tNsmNZ5bwtH5XdfgYveG737ywyD2vI6zg8GY
+					YipBRthPw2CypW3h6yUk5+M6AZ8R0X4ajnOP
+					u03qlNRVeiMrmljlZxMAUXHlrB030MNyD4iJ
+					yxFA+RZcLqCj40GOGzxBbi97IGI= )
 			86400	DNSKEY	256 3 8 (
 					AwEAAbsPe8Ct2PQcQ31wPd3dSju5tqZNWAu1
 					mG+v0wn97+Nj1TgvyYQmpYOZRIRRcTElwk5P
@@ -58,117 +66,149 @@ l1-20.ephec-ti.be.	86400	IN SOA	ns.l1-20.ephec-ti.be. admin.ephec-ti.be.l1-20.ep
 					SItN4QwM2nI8hGN45HIg0cE=
 					) ; KSK; alg = RSASHA256 ; key id = 46409
 			86400	RRSIG	DNSKEY 8 3 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					kIRlL6GRmT+/riCD8BsYYTrLo2gpGmi7Mn/V
-					BPn0tpvvwAQtpvVJks7Jph4E2wicNuu8GdQ1
-					Fok5OQpR9qg8vbZalijoa6igWNnGlIIOA288
-					6U/qJB+mnNulBr3zlQh+7pC/ZqSx6Dh9b/yC
-					pz/ApakHXnfU2dtn2htvYpg1bOc= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					YgyZUDMf8i1u8FdYHU3t6xVxFMXr28NCiU2g
+					eulhNBSq9nE8pPzYCT6ZWsLlguWmTlPhqpH1
+					jjl5iauyf+UAkaWlgK/rEDGYOLvJjLS1dTz8
+					nfA1ouq4bYIEPvaLykz2HMsZ4jpLCuwu0dXj
+					BUcxB+WviIjWsv2UM5CdaLQCYjU= )
 			86400	RRSIG	DNSKEY 8 3 86400 (
-					20240916220514 20240817220514 46409 l1-20.ephec-ti.be.
-					kN/Qngp7ma4s1hokmL4V2psUmuS6BgCQehjK
-					mBNpApk/FJ97rWbRb3+xNNSsr5nZPoNYnI1y
-					YFlBURUDSOOyNjhksu1eA2zKoaokJswyil2j
-					SwfS0mGFp4YBIuGy30XS1b/UtaUngz7nr0J2
-					HRei2JGmJE8dA93t+/pqj/xBiDEHWlKmai0H
-					4eNMKSc0922YUMu/k3D0EHeyltTvOiKsk+xV
-					8DG3uOHnmDKngBrse3FkMnMSVB3H2GndEqFF
-					kNF1p9GxKUdK9LJ4HHfSWu/CCk0JEUbHdR8X
-					4TQbDI2U4IFN4gGZjzsIGyLu2mEloFul/mGB
-					yNqqRSz9rqmEroTgdg== )
-ns.l1-20.ephec-ti.be.l1-20.ephec-ti.be.	86400 IN A 51.178.141.71
-			86400	RRSIG	A 8 7 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					V57nc+712Of9pce3U9yFOfzm0kdGEwuOKL//
-					EGxANyW1qgy1QCA6aXs90iMyvLemJ2lMAaKe
-					m2FjYcfuWw4xRcEdmrD2MDS+eIerJF16sBsP
-					8mKlmORmLBmQawJ/RLQ2AVQ90noAmEMJ6TnU
-					6RcPOx9UvCR5jThgsFDcwKQshf4= )
-			86400	NSEC	blog.l1-20.ephec-ti.be. A RRSIG NSEC
-			86400	RRSIG	NSEC 8 7 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					J9v6UAhddcn+ywbzNNuPPoaFPtsvGO541irn
-					HzaRcytS8MVzkcil0CchVAUIlnXMe4Oonf9y
-					DtNCyyyJaWBneSu1Jzt0NRHyknB/z6ChULC7
-					n/j18uJPf3GDgsyRTMD9o6n5yOSmYWYO5qGL
-					yWUQCzE4uiTBB7p8ryHJFyTJsGs= )
-blog.l1-20.ephec-ti.be.	86400	IN CNAME www.l1-20.ephec-ti.be.
-			86400	RRSIG	CNAME 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					b+SqYuIiIm9ALs4lL/NXCsmyrTfjx99sE/nl
-					syp0xcy8DYJUYudV5jka+jI15S9BX4RLaMen
-					GvQUGK9cUtgSCPMceRY4ELPQvxBrdKm/ir2O
-					MVq1Bs3eB52SeIOqCi9Yb+57ftvjuPjcPDSR
-					iDKaDqSgvCVBxVimFczxU3LGL5g= )
-			86400	NSEC	mail.l1-20.ephec-ti.be. CNAME RRSIG NSEC
-			86400	RRSIG	NSEC 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					bw9OT5Kpy8yeVCq4f+HNVD7bL1jYT4nBUNlw
-					Sxp+8a4Zq8Y5zixA0yYPELhnjXTRjJaX5LZF
-					Scw3gUXgcl4CVbHlmcJzgJm1p+MPz5cvsZuQ
-					ofKfhXMc+1p6L4HwUwe9sjOZRp73cZgoSam0
-					bK5EIrBhY+X0ICwGxZqnGmoyykQ= )
-mail.l1-20.ephec-ti.be.	86400	IN A	51.178.141.71
-			86400	RRSIG	A 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					BKnAX068vpxgwTFl4VdWyYGOOAk8tyDMsqja
-					bBu6jWSlbP+NsFiKzN8YJHfzML5LqB3GUuiP
-					UhG3t1QXyIFjoZOPt34cjXSjJqOZu38Aom/T
-					8mhz1UDVqXHtaqRzRn2myUIxRd7pqRv053/2
-					vvx3QSZT3MG3/5EjY+Wg+htFT68= )
-			86400	NSEC	ns.l1-20.ephec-ti.be. A RRSIG NSEC
-			86400	RRSIG	NSEC 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					YI+P4x9qc3zzKNNoXicHocIYaIbtqtYGnj4T
-					lA+lGmkz0X+bShU6B/P2tlVotiEg+NubppYX
-					2hhxfsI6V6mbXJAjvtTvhIKIWHU+nxZ1RUQk
-					DQ3CdCXDlN4dNBpln3ARVwvEzxsYQUgDl/tq
-					dAWre0NhjsUIKmDxLUZXsvK9Z3k= )
+					20240917074539 20240818074539 46409 l1-20.ephec-ti.be.
+					XfKagCsDu/+PN40oeWgU9YXdyrEsLzX8SPlu
+					jJwytNZiqo4xVVc+nJJrYfP/an3LqUOZVckk
+					Y9Iy373ju+xmqV10m1Vzu809We6gv+jm6y7j
+					lGs+R1OTR2fJlAedcsAItZyQQRnnNImPTmlZ
+					tY9NNK7CwA2E4U2lwDvuQCYLVHjxWlXorNea
+					mU+d5lnFq9ka1blz8rC3OUcYbHF3o0+pc4Vm
+					fAYJURzPc8gBWC8IJ1P5fk3JmY1UljaT9kyB
+					i9uvFBcbFLlcHL5lQPagNuCWn867D2Bod5wJ
+					KLUgEm+HrWEcLGn+/wHz0KmlTWA3f0W1T6k2
+					OPVZ2Or1VhiG0VXqAQ== )
 _acme-challenge.l1-20.ephec-ti.be. 86400 IN TXT	"hdBxsj8KnmcJqSBqdeP6r6eoXKn855esHmkqJkAGl7M"
 			86400	RRSIG	TXT 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					uQlg8B2aucW6PPlPDJbb3LWA3aC7vojehjTS
-					hHPM4kmfiDG/8sLDP6ZYFLkI4PCSthn+qvfx
-					6nvIeO3Sa10FW+sqCBfGOg2seCCo9WyQ19RG
-					bpUrDdot/3uGV3EA7FV31/vOg0KDDCk0wqSD
-					XV+y7caVsBNMuNAMOG4ANbcRZCs= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					Wm2ONjfw8JqPK+7gIdG4TX4L+DB0oPrAswhE
+					qrxibRhGPdQkOijxCEcHD6a6Kk5uzUvIqlgC
+					UIIE4cr4g+6DrpnMAtyMql1s2Wdp/wRKOOaV
+					EH/V+RA53we5lIzE3cm3GbaAas+Fm4Xu1ACp
+					BH+nKQPEStPzNVY31YE58W3bdck= )
+			86400	NSEC	_dmarc.l1-20.ephec-ti.be. TXT RRSIG NSEC
+			86400	RRSIG	NSEC 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					bv6S+wcEXFd8gVpu6h/GEZIZYCSZi2BUkYzt
+					CfFc1uWpSn2hofwPV/UwM88yqf/9b9hkB6kO
+					riyMkcScR3FM+gii/ne0m1N4AAwM+uKe1xMy
+					1l+658zph9u8bBufzSaGzt49TL6XwXE7UfCo
+					cl8lYqFL0ow6j4iXSPEUauGH3jQ= )
+_dmarc.l1-20.ephec-ti.be. 86400	IN TXT	"v=DMARC1; p=quarantine; rua=mailto:oscar.misson@students.ephec-ti.be; ruf=mailto:oscar.misson@students.ephec.be; sp=none; ri=86400"
+			86400	RRSIG	TXT 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					Aq/JKVFQRUMQD0DDekSBXVwXXYjFAfkaj3S3
+					ob0km6YYmqPBnWB6oBvpYWx12ZvtcHkGXvZ5
+					8L7Urfh0Rh59iGImGBPABUBp9H5tq+B0jiIJ
+					Wy/UL/Ct9ZEa6PC1eYJbGPt5NWHfrBnP38wS
+					h3tvhx8bzzt2ay9czsZC04kVdxU= )
+			86400	NSEC	mail._domainkey.l1-20.ephec-ti.be. TXT RRSIG NSEC
+			86400	RRSIG	NSEC 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					a6XSDUsJPfhoQrY4id7kTksDMLcuBBWFX19m
+					JEzpVkYRl6qAvzLZ6lrzDojt5xl3TUsYozA8
+					srvhzIPwtDjgTJAx2YB1D87Pl51sci4BwV4s
+					461/9P2T4ufutBK/2u5HeBPcu3gU4yHMhyj3
+					5aO5FkfPAYCUKXH7dH/luKYhmTk= )
+blog.l1-20.ephec-ti.be.	86400	IN CNAME www.l1-20.ephec-ti.be.
+			86400	RRSIG	CNAME 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					JBQbe7zNhDJFdwkwZj+5NQK5ONXzsq5xDH8o
+					TYowdEOoVkUKp60x0oNeXMTjWP1dmnGrn361
+					swI8Fgn+Q2laSsQT2r42RidBAlamIEXc32xa
+					W2KSVpJu+D8aOzdQidOu7fCDwEnrjoWzH9YS
+					ZWyvECDNllvd4TuD4ibKLoZ1RsA= )
+			86400	NSEC	mail.l1-20.ephec-ti.be. CNAME RRSIG NSEC
+			86400	RRSIG	NSEC 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					PQuqPMBvtrQCkrUUYSGA3APPx0yIVc4h02Hd
+					znsWahQl9YW7IXt0qIUNpluNsTcGxDeBj6h8
+					FKEBMXyu0gkU+sT0FMA/S8bHFe0mt4JiX+4L
+					GJnSW4J3XYBrVV7WYHM+2AhdkD11wTFvTpt8
+					5xhOSK86EAmWfias6MsEYCsgdMs= )
+mail._domainkey.l1-20.ephec-ti.be. 86400 IN TXT	"v=DKIM1; h=sha256; k=rsa; " "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwVYsO/RbfnUaN8dMJY3G3qWutejxrjKCBjY9pH/W8NPJmxpsZbo/k9S9LlYA9b4isM/ybXSrO0ryccfnQhECmPPCYZZVsoH0Hc6p8r0Wp3pKh0k2HI24mj1D7z5dbnfIgHy2Uqsw2yLyHYPbOsLAoy6N3gawl9wJFdwg4CxMnfayIGvoy7uS2+ziVM809WOXX36G7YjCbPb4F4" "QDDYhWy08TTwcknzaq/Wr7BnzNTHO4hOObedzovmMfNI0O0nNV3kWYRNFhcf651MGemWtd2me2dOgGS17uB6ieHrtNuVMEpiyZ13WxN3q+9Gt7OzXmDrt6IId+wQ5SA5OYFf0w5wIDAQAB"
+			86400	RRSIG	TXT 8 5 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					ZsyDeo/hiLZ6p4Fzm7kACHhtNpEfXWXmnUyy
+					VzRQdK2rqjMAo+2Y6hDYgPqZQ2nML+Cxqs3x
+					y/oRxxU5TvtnTmhJDv+6ID5rylC/++QfY9zv
+					MDOYy+E6pHX56xhOfkSvDVxjm94g/Yt0PUkw
+					G6F2nBWQQuvWcFCcsddgrc5Sias= )
 			86400	NSEC	ns.l1-20.ephec-ti.be.l1-20.ephec-ti.be. TXT RRSIG NSEC
-			86400	RRSIG	NSEC 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					hdxAO6uYEF3tBXeBSpWWKPdHzqENKp/Eu5pw
-					DYjXZpbwom8+lavFem7nMzKwDa8Zlh+dCn+a
-					CwVMlNRrbNX9DHfMcKd8oLZvuBoXmAGh+d/w
-					TN/oSzMP87aYr8Kv9rYdk6L0j2enkNqkAiYI
-					JGEMKP0B9WVgStpmLlpM4qTC0rg= )
-www.l1-20.ephec-ti.be.	86400	IN A	51.178.141.71
+			86400	RRSIG	NSEC 8 5 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					ogDt/12hWMzpxBQGNGyIWQiq/+nEPrcfpQvk
+					mO9/fM0N6NUzSEZEoRQhPwbsRlSQ7SVqBKgf
+					GSKFFTs2LjTJkJfJL6bVNeFwvBmNjmiMukr2
+					1JYkXvjTnfX9PCEPcJ3NSTTNZqV4OfoDzNPO
+					D4xs00eIAY7hi5ni0sm/lRy8EPE= )
+ns.l1-20.ephec-ti.be.l1-20.ephec-ti.be.	86400 IN A 51.178.141.71
+			86400	RRSIG	A 8 7 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					jA+6fMb+f9bpFYqruxZK6UG22d99PHSCHy1U
+					C84q9pZxEeOn/iMHtPY1g0mmRZezhfFf4L30
+					fqNpnHXNdeIDLWNPAfgignen5+Z1pAij1cyf
+					XORFKFjSZPNQoXK/Cy88VHY8m/xowq2qkktc
+					FSANQ9q2uxwi4knf6JRHZLM4nSo= )
+			86400	NSEC	blog.l1-20.ephec-ti.be. A RRSIG NSEC
+			86400	RRSIG	NSEC 8 7 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					l4HAV4dW/u2+891IGphh8/ZL7K4UxJedZr4L
+					BTg5Viq5uunmPC9rJE5TfB18g0AE+ZDNxlBK
+					hI28PdKOHg6tpmziWMLJCro+xBqqlraMbfKN
+					I1FBg1Y3CvGLpnkwz5SWmW/3kYabdztKHyx6
+					MLoK+r7OAeqSnT03ICC8IXn7FtY= )
+mail.l1-20.ephec-ti.be.	86400	IN A	51.178.141.71
 			86400	RRSIG	A 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					QbnGpCDnmTNhVnFLmXu3cqChz6Hh3W2S60uv
-					/lO+QNiRX8cZaP7xT/PUvtGUkE6GmC9NlS3p
-					v/u/rloJaaExN/4Say7ihqH8kMb4wbNOeAS8
-					bR4L2XRAIdbo5RIfTcDG+uychubqiFk/hXKk
-					JQdh0jwGHB+sAAVNTogj1Acd8Gs= )
-			86400	NSEC	l1-20.ephec-ti.be. A RRSIG NSEC
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					TFfhp1a/r1O8F+lpCXkz7dxSaHV9EMGA7uH3
+					O3OFs0txKKWWNqZv5cRFsk88T024UojqD4S+
+					17G+i2gq4feeJTOeqMKDjdx1wj4jgt6DUMQj
+					oRgfg06N4Uehi+Bv+s14LyzM/tYXQbfG9waD
+					bMo5DbI+AYkoAgYIMcuWPRVqYn8= )
+			86400	NSEC	ns.l1-20.ephec-ti.be. A RRSIG NSEC
 			86400	RRSIG	NSEC 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					rITDsgEsbIwHtU3++rI0tN6/H9vtBG5XEAOz
-					C+x78DM9SmuexgPPMekgOU4clvCpJh3aWWDJ
-					w6nC0lxJjoq/2wB7e/dpv2nq867he9DoV4UG
-					3m2CsIntnXpXEl9ekjh2Fu24WMaa35n+s4Aa
-					NHXU/KMCaspNlzSO1+9apRHTf5E= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					pGYwh/mekQdbVeZek620VDgiqg8Q1XXD4Un4
+					tl7ZhWleaZJYhEKqka9KNCtWwgloHeLc2Jba
+					hY+rXb9f16tfn9qtCG9qgE8EXnD/FjR0E7rt
+					62g/kKwBBktWFkb/d5Vjse3Crp8l40yaYBL0
+					r7NGlKoDyYtI6v5tJ0Sn3nTM/xA= )
 ns.l1-20.ephec-ti.be.	86400	IN A	51.178.141.71
 			86400	RRSIG	A 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					Y6rrgDtZfK9dsBLkwn6g7aoioES29+1/pA39
-					QHQB6fnETdMtJo0NDQXPOS9vMOpokbEJ15TV
-					x48NpFcTveP0HDd8C7fxLAV1VsLFXFu4sswI
-					j5ZKlFSqZiFJtjoGdADjvRM77BbOZ5ec82h5
-					7ULjvjrPXovy0oHEfj+0S1QqySc= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					nRYemaRZMdL2+MOoVmJpPczHMoeeZR8RjVy7
+					hIe/0WMqazM+o8uHNMNH6v5zVZPsI5/4EK+v
+					0rjCKJjW16sow2t6hg1EYNmmfzJe+7SJd7u8
+					qUpYQTD/Nc9k1HIMYW1ItLvYuRVnbXMbkcQp
+					nNH/65kaPwmVf5Sn7pa3f7oaUl4= )
 			86400	NSEC	www.l1-20.ephec-ti.be. A RRSIG NSEC
 			86400	RRSIG	NSEC 8 4 86400 (
-					20240916220514 20240817220514 40584 l1-20.ephec-ti.be.
-					J27kOHBdUbxy0CVY4+5+MzUfzw7GqzxTxuu/
-					/V/yuZ0aPCMPzBQuTy3HqmBaIPpf8UfR8StC
-					K7i/Tt7G2w1mB32r7SOUBuKKW6jRnazQJLhE
-					pQ2rMEEwJPOeCpXxM2zbqXkE8M3FPexCoLdY
-					QoaLylDGtYTKM352X+NFHxIN+sg= )
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					EYcQhE17DGC16fWHI095HBIPIR/g5vHxrNqk
+					A0Etue7zAyX/tTGteW+BVbq5iBDNcgVrNtuo
+					ol2+6Yv6koeTJoaTmXEkgHqNDbszYfdzymKq
+					XPW6uPEgWXFQBo58rZSA3rEnpZ9Uh7xdU5it
+					HoG/GZVNX5S7x0uFA/tp3hHLNoI= )
+www.l1-20.ephec-ti.be.	86400	IN A	51.178.141.71
+			86400	RRSIG	A 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					Y+Zs1ZDIXoZ06148O7C3OnTPhwup4VTZgYIs
+					B1b0gpDbfrWRKmSxibyEPbr3n5AtVoxjPdbu
+					fSJc/UVwDAEtBJbklw3b+SH7GD7oExgxSv9J
+					yDGdRWGNOpLEi2P7hZay/Kba76GGo3dMT+Nc
+					gGL2VXj40TXAgX280upYmQwLpB8= )
+			86400	NSEC	l1-20.ephec-ti.be. A RRSIG NSEC
+			86400	RRSIG	NSEC 8 4 86400 (
+					20240917074539 20240818074539 40584 l1-20.ephec-ti.be.
+					Hz9kMgzJ7C8BthJ0rIX/EEVUL7ZMIXScImRd
+					/qgIEdv7SqVQZsJ4u2vlVDfjhQB1KF9kXa4k
+					lSZhCrbtE04eaeZq236DLQRykQnU4FYUcoT5
+					jyYw6OxgpGcBe85rBDFWVBeStXe9fTxpVJ34
+					NkegASDAwoftbKJuivBzEC/UdEM= )

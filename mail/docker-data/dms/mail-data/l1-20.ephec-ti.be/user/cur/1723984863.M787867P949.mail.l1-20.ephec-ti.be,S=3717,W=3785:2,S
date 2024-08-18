@@ -1,0 +1,68 @@
+Return-Path: <oscar.misson@gmail.com>
+Delivered-To: user@l1-20.ephec-ti.be
+Received: from mail.l1-20.ephec-ti.be
+	by mail.l1-20.ephec-ti.be with LMTP
+	id wt3kLt/rwWa1AwAAIxb3cQ
+	(envelope-from <oscar.misson@gmail.com>)
+	for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 12:41:03 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.l1-20.ephec-ti.be (Postfix) with ESMTP id BAEF1103E44
+	for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 12:41:03 +0000 (UTC)
+Authentication-Results: mail.l1-20.ephec-ti.be; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: mail.l1-20.ephec-ti.be;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20230601 header.b=a5Pu9ivC;
+	dkim-atps=neutral
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=209.85.128.174; helo=mail-yw1-f174.google.com; envelope-from=oscar.misson@gmail.com; receiver=l1-20.ephec-ti.be 
+Received: from mail-yw1-f174.google.com (mail-yw1-f174.google.com [209.85.128.174])
+	by mail.l1-20.ephec-ti.be (Postfix) with ESMTPS id 47502103E0A
+	for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 12:41:02 +0000 (UTC)
+Received: by mail-yw1-f174.google.com with SMTP id 00721157ae682-6b4432b541aso11703357b3.1
+        for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 05:41:02 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1723984855; x=1724589655; darn=l1-20.ephec-ti.be;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=SHjkTn3spn9F84tI5xc+dxN8CMRwinvjzkerwQXWri4=;
+        b=a5Pu9ivCJD53tZi+acROKw8XSk3ZB9C/kxA5uqEYFiivr/UHtDyc8Y4u0eEBpRwPqJ
+         bvdhs/2KfeHgkaCfoHAceH8SdeVTOscXJ6GYe+PkGYwYygoSmanCgrs2FVOgksbGW+Kz
+         ue/iV/abmcAI0/mCo+ZGS/rFH+YPzw7qqXsK6cqFy/anMOi+LqIOK2A5Gp+DFVtbZOoD
+         mRaiiH5uMEuDElPHrpfBoNMaihLpssiADlOP6bXL6eodwXIQNrqvCbh0SmYEp6MWAM5f
+         ejg18/XBHqtaVbYxfKt7YnfZzDjqzGEcrN5I+dG2stsTPM7f8hHEMbHewBvEeBcAE266
+         DKmQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1723984855; x=1724589655;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=SHjkTn3spn9F84tI5xc+dxN8CMRwinvjzkerwQXWri4=;
+        b=orTrhHkBLKthpV/FzZgAPUyreY6Fi2lgjxfEy5y2wtwWcX31FgVAHpVH1g6okMrEcr
+         ndqEETiuXYOziv+EGwqngdA06vg0hkDqVMn4IFRX/jihHX1bEjmF3ddRHSvcMtCFoXox
+         PerNl+/WfOoOXy5eJtQozGxJGAmGz65Of/EoJneapJ1wF9firR1tKwAqV3nFAtMKSoJj
+         oGk/loys1e8r6OPH3IWyVqJVcVUAk1z8G1WPUl+8T7C4o+b9ZUW7RBkaApYAMaPoD0ob
+         EyoRJru+fAOeZeLLfbR4InB9nzMD8rpJQbFrq7TsFTVcNHS8Sx8FVGdm1fVLNf8kgjX5
+         ogsA==
+X-Gm-Message-State: AOJu0YzmBVGN+io+zhunhEN9aVkhUN8jyGvNGObB6at2XlvoBR3xkjal
+	fzT6slGZNIwiZQMBJ+wMstCk9pOjH6yfQaTKEAL++5KYLPzCPmk9+2QncvxAXaxoU8fP8j+9Kmb
+	xZ3SKOUPeN1/JV9eOHlSl+45XL5Sz
+X-Google-Smtp-Source: AGHT+IFXTYJWFT8/z3V852wxXVCfMlmB0khI/mDF8eGacdqx6QMDvHmFg2tXXusUw0lf495s6DXQpbwQS17SUH9doaY=
+X-Received: by 2002:a05:690c:389:b0:64a:4c2c:f4c2 with SMTP id
+ 00721157ae682-6b44e9e0f18mr63257217b3.6.1723984854791; Sun, 18 Aug 2024
+ 05:40:54 -0700 (PDT)
+MIME-Version: 1.0
+From: Oscar Misson <oscar.misson@gmail.com>
+Date: Sun, 18 Aug 2024 14:40:28 +0200
+Message-ID: <CAJd9wxHfuU7oHsNgDzhWajQm44ofXGmJVYt2LhsixsNMpso02Q@mail.gmail.com>
+Subject: test
+To: user@l1-20.ephec-ti.be
+Content-Type: multipart/alternative; boundary="000000000000de3e9e061ff4809b"
+
+--000000000000de3e9e061ff4809b
+Content-Type: text/plain; charset="UTF-8"
+
+test
+
+--000000000000de3e9e061ff4809b
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">test</div>
+
+--000000000000de3e9e061ff4809b--

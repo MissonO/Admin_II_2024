@@ -1,0 +1,78 @@
+Return-Path: <oscar.misson@gmail.com>
+Delivered-To: user@l1-20.ephec-ti.be
+Received: from mail.l1-20.ephec-ti.be
+	by mail.l1-20.ephec-ti.be with LMTP
+	id F70aMk7twWbZAwAAIxb3cQ
+	(envelope-from <oscar.misson@gmail.com>)
+	for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 12:47:10 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.l1-20.ephec-ti.be (Postfix) with ESMTP id C6D35103E85
+	for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 12:47:10 +0000 (UTC)
+X-Quarantine-ID: <haUrv7qTpeA7>
+X-Spam-Flag: YES
+X-Spam-Score: 990.087
+X-Spam-Level: ****************************************************************
+X-Spam-Status: Yes, score=990.087 tagged_above=2 required=6.31
+ tests=[DKIM_SIGNED=0.1, DKIM_VALID=-0.1, DKIM_VALID_AU=-0.1,
+ DKIM_VALID_EF=-0.1, FREEMAIL_FROM=0.001, GTUBE=1000, HTML_MESSAGE=0.001,
+ RCVD_IN_DNSWL_HI=-5, RCVD_IN_MSPIKE_H2=-1, RCVD_IN_VALIDITY_CERTIFIED=-3,
+ RCVD_IN_VALIDITY_RPBL=1.284, RCVD_IN_VALIDITY_SAFE=-2, SPF_HELO_NONE=0.001,
+ SPF_PASS=-0.001, TVD_SPACE_RATIO=0.001] autolearn=no autolearn_force=no
+Authentication-Results: mail.l1-20.ephec-ti.be; dmarc=pass (p=none dis=none) header.from=gmail.com
+Authentication-Results: mail.l1-20.ephec-ti.be;
+	dkim=pass (2048-bit key; unprotected) header.d=gmail.com header.i=@gmail.com header.a=rsa-sha256 header.s=20230601 header.b=Q80UgYdq;
+	dkim-atps=neutral
+Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=209.85.128.176; helo=mail-yw1-f176.google.com; envelope-from=oscar.misson@gmail.com; receiver=l1-20.ephec-ti.be 
+Received: from mail-yw1-f176.google.com (mail-yw1-f176.google.com [209.85.128.176])
+	by mail.l1-20.ephec-ti.be (Postfix) with ESMTPS id 92857103E0B
+	for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 12:47:09 +0000 (UTC)
+Received: by mail-yw1-f176.google.com with SMTP id 00721157ae682-6b3afc6cd01so11275507b3.1
+        for <user@l1-20.ephec-ti.be>; Sun, 18 Aug 2024 05:47:09 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1723985222; x=1724590022; darn=l1-20.ephec-ti.be;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=0a0VAQtdFvlRHKrBEt1nTIznqTtI2SqVqJEbe8ebQK4=;
+        b=Q80UgYdqqT925a60FuUkmA4UeW8v+UYf9N8zd+cb/NYNOKrwFJScspfnvasctM5w1N
+         XooPGtuV6wEmboXvcOWen4Otdx+ci+zOLap42THANWARM1mwHJuyQrISZOIFLFw4THLT
+         7jXHG9RWGfP2l2y15eKQ4mWMH+aWaa25payAftZH3X9it9sYP6QRQ3iA/EGpi3tlsPTv
+         L6588l0h5yDgFpZ679CZscFSprEsWh9+1iaHHznBUiqLVcq6ClPEm84UDCJl7HnfmyJV
+         ndA5P0pQpLxl/Fe6VTL1iBM0NqBziciNavRY5X9HJOePq/tyF8F6jCmQN9CkeMB0/bhL
+         +Qtw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1723985222; x=1724590022;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=0a0VAQtdFvlRHKrBEt1nTIznqTtI2SqVqJEbe8ebQK4=;
+        b=b2zNWEs5RZPq4+24re530B1FjzJrDDXAzi+mT0OQ/kA5vHQb1I+K39x/5uo6QoHcJt
+         n+zbDK8i0MPZKo41CXA7BxRGdPngzAXIX/NxVL/tjbrWjIlTh+XVwr73FLMLdL1YxVjS
+         SB3GRtts8nO0isz0nTOFU5pYUcCxpM7ebEki9r41eDguzIIe9CQ89uqwTn2Q8A5RJ7Lb
+         au0+bVQK4kSicS+yxYSTLdlU17UV+fnMpnfAeeWTAngPKjb8zXpSooRLc2ocWqrsI6PD
+         hfVgdn1Eu75GLNCtruxG1d21diCz+a5rPYIwCkLmUO3O59drZoQGnOZb56gzFjH5ReR8
+         BaMQ==
+X-Gm-Message-State: AOJu0YyFQ80jV+JjR/IOjIJ/vvn2CyL2zaokdf5+AwMspJgN9aMG3YUW
+	p+2ux7HlFoblliRqwLWONRPHNNZXksFFwONq5joCzDzvYmMxFy7xPQu+ceqMNFpq7v6C7hJ54/D
+	xWU1nIep9jR8T1Ekzj7zDW1u8g658Ekw=
+X-Google-Smtp-Source: AGHT+IEz+ZRusonI1qlLHjdFzEA9I0hC0VsyXafiIFlvGOUOCSGWWmzRYWKu7mclrZhr9Nd54PayLjuy/6NYu5FFet0=
+X-Received: by 2002:a05:690c:3342:b0:651:4b29:403c with SMTP id
+ 00721157ae682-6af1b83243amr100958487b3.2.1723985222096; Sun, 18 Aug 2024
+ 05:47:02 -0700 (PDT)
+MIME-Version: 1.0
+From: Oscar Misson <oscar.misson@gmail.com>
+Date: Sun, 18 Aug 2024 14:46:36 +0200
+Message-ID: <CAJd9wxFfLc73GoZ=y3fk5Qw=Rrmm-mcAWB+sSXA9t_pYp77Ubw@mail.gmail.com>
+Subject: XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
+To: user@l1-20.ephec-ti.be
+Content-Type: multipart/alternative; boundary="000000000000c2e686061ff4962d"
+
+--000000000000c2e686061ff4962d
+Content-Type: text/plain; charset="UTF-8"
+
+XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
+
+--000000000000c2e686061ff4962d
+Content-Type: text/html; charset="UTF-8"
+
+<div dir="ltr">XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X<br></div>
+
+--000000000000c2e686061ff4962d--

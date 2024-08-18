@@ -1,0 +1,12 @@
+Message-ID: <f20f2e5b-ead2-46f2-a31b-d7ddf3578ec3@l1-20.ephec-ti.be>
+Date: Sun, 18 Aug 2024 12:20:56 +0200
+MIME-Version: 1.0
+Content-Language: fr
+To: O7liuNo6CS9IDr@dkimvalidator.com
+From: user 1 <user@l1-20.ephec-ti.be>
+Subject: test
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+test
+

@@ -1,7 +1,7 @@
 $ORIGIN l1-20.ephec-ti.be.
 $TTL 86400
 @   IN  SOA ns.l1-20.ephec-ti.be. admin.ephec-ti.be (
-                2024081010 ; Serial
+                2024081011 ; Serial
                 3600       ; Refresh
                 1800       ; Retry
                 604800     ; Expire
@@ -19,6 +19,14 @@ mail    IN A 51.178.141.71
 blog    IN CNAME www.l1-20.ephec-ti.be.
 _acme-challenge.l1-20.ephec-ti.be.    IN TXT hdBxsj8KnmcJqSBqdeP6r6eoXKn855esHmkqJkAGl7M
 
+; SPF Record
+@       IN TXT "v=spf1 mx -all"
+
+mail._domainkey.l1-20.ephec-ti.be. IN      TXT     ( "v=DKIM1; h=sha256; k=rsa; "
+          "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwVYsO/RbfnUaN8dMJY3G3qWutejxrjKCBjY9pH/W8NPJmxpsZbo/k9S9LlYA9b4isM/ybXSrO0ryccfnQhECmPPCYZZVsoH0Hc6p8r0Wp3pKh0k2HI24mj1D7z5dbnfIgHy2Uqsw2yLyHYPbOsLAoy6N3gawl9wJFdwg4CxMnfayIGvoy7uS2+ziVM809WOXX36G7YjCbPb4F4"
+          "QDDYhWy08TTwcknzaq/Wr7BnzNTHO4hOObedzovmMfNI0O0nNV3kWYRNFhcf651MGemWtd2me2dOgGS17uB6ieHrtNuVMEpiyZ13WxN3q+9Gt7OzXmDrt6IId+wQ5SA5OYFf0w5wIDAQAB" )  ; ----- DKIM key mail for l1-20.ephec-ti.be
+
+_dmarc.l1-20.ephec-ti.be. IN TXT "v=DMARC1; p=quarantine; rua=mailto:oscar.misson@students.ephec-ti.be; ruf=mailto:oscar.misson@students.ephec.be; sp=none; ri=86400"
 
 ; Delegation zone
 @                           IN NS ns.l1-20.ephec-ti.be.

@@ -55,3 +55,5 @@ Thumbs.db
 db/data/
 
 letsencrypt
+
+mail/*.env
